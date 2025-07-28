@@ -1,45 +1,74 @@
-from flask import Flask, request, jsonify
-from graphene import ObjectType, String, List, Int, Schema
+import json, os
+import time
+from datetime import datetime
+from extractor import extract_outline
+from embedder import get_relevant_sections
 
-import json
-import os
+# Start timer
+start_time = time.time()
 
-# Load JSON file (Round 1A output)
-def load_pdf_data():
-    path = os.path.join("output", "sample.json")
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+# Load config from input.json
+with open("input/input.json", "r", encoding="utf-8") as f:
+    config = json.load(f)
 
-pdf_data = load_pdf_data()
+persona = config["persona"]["role"]
+job = config["job_to_be_done"]["task"]
+pdf_files = [doc["filename"] for doc in config["documents"]]
 
-# Define GraphQL types
-class HeadingType(ObjectType):
-    level = String()
-    text = String()
-    page = Int()
+all_extracted_sections = []
+all_subsection_summaries = []
 
-class Query(ObjectType):
-    title = String()
-    outline = List(HeadingType)
+# Process each PDF
+for pdf in pdf_files:
+    input_path = os.path.join("input", pdf)
+    outline = extract_outline(input_path)
 
-    def resolve_title(parent, info):
-        return pdf_data.get("title", "")
+    # Prepare input for ML model
+    sections_for_model = [
+        {
+            "document": pdf,
+            "page": h["page"],
+            "heading": h["text"],
+            "text": h["text"]
+        } for h in outline["outline"]
+    ]
 
-    def resolve_outline(parent, info):
-        return pdf_data.get("outline", [])
+    ranked_sections = get_relevant_sections(sections_for_model, persona, job)
 
-schema = Schema(query=Query)
+    for section in ranked_sections:
+        extracted = {
+            "document": section["document"],
+            "page_number": section["page_number"],
+            "section_title": section["section_title"],
+            "importance_rank": section["importance_rank"]
+        }
+        all_extracted_sections.append(extracted)
 
-# Set up Flask app
-app = Flask(__name__)
+        summary = {
+            "document": section["document"],
+            "page_number": section["page_number"],
+            "refined_text": section["refined_text"]
+        }
+        all_subsection_summaries.append(summary)
 
-@app.route("/graphql", methods=["POST"])
-def graphql_api():
-    data = request.get_json()
-    result = schema.execute(data.get("query"))
-    return jsonify(result.data)
+# Final combined output
+final_output = {
+    "metadata": {
+        "input_documents": pdf_files,
+        "persona": persona,
+        "job_to_be_done": job,
+        "timestamp": datetime.now().isoformat()
+    },
+    "extracted_sections": all_extracted_sections,
+    "subsection_analysis": all_subsection_summaries
+}
 
+# Write to JSON
+os.makedirs("output", exist_ok=True)
+with open("output/output.json", "w", encoding="utf-8") as f:
+    json.dump(final_output, f, indent=2, ensure_ascii=False)
 
+end_time = time.time()
+print("✅ Combined output saved to output/output.json")
+print(f"⏱️ Execution Time (1B): {end_time - start_time:.2f} seconds")
 
-if __name__ == "__main__":
-    app.run(debug=True)

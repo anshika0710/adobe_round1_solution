@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+    "timestamp": "2025-07-28T16:16:36.322491"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "Travel Tips",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 9,
+      "section_title": "Airbus Factory Tours: Visit the Airbus factory for a fascinating tour of one of the",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "areas. Learning a few basic French phrases can enhance your travel experience.",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "buses, and flights. Renting a car is also a great option for exploring the countryside",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "section_title": "to June) and fall (September to October) when the weather is pleasant, and the tourist",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 6,
+      "section_title": "truﬄes from the Périgord region. Join a truﬄe hunting tour to experience the thrill of",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 3,
+      "section_title": "tourists alike.",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 6,
+      "section_title": "tarte tropézienne. These classes are a great way to immerse yourself in the local",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 8,
+      "section_title": "linger long after your trip has ended. Bon appétit!",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 4,
+      "section_title": "you should consider visiting:",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 1,
+      "section_title": "points of interest to help you plan an enriching and unforgettable trip.",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 12,
+      "section_title": "waiting to be discovered. Use this guide to plan your journey through the South of France and",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 10,
+      "section_title": "Montpellier, founded in the 10th century, is known for its prestigious university and vibrant",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 3,
+      "section_title": "reflects the influence of Russian aristocrats who vacationed in Nice.",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 1,
+      "section_title": "A Historical Journey Through the South of France",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 8,
+      "section_title": "a good option for travelers on a budget.",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 14,
+      "section_title": "voyage!",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 1,
+      "section_title": "trip.",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 8,
+      "section_title": "make it a great choice for budget-conscious travelers.",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 9,
+      "section_title": "vacation.",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 13,
+      "section_title": "this guide to plan your trip and make the most of everything this beautiful region has to oﬀer.",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "section_title": "Périgord : Join a truﬄe hunting tour followed by a cooking class.",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 1,
+      "section_title": "unforgettable trip.",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 1,
+      "section_title": "a wealth of activities and experiences for travelers. Whether you're seeking adventure,",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 13,
+      "section_title": "and experiences for travelers. Whether you're exploring the stunning coastline, immersing",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "section_title": "Planning a trip to the South of France requires thoughtful preparation to ensure a",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 8,
+      "section_title": "Pack a Day Bag: Bring a small day bag for daily excursions.",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 9,
+      "section_title": "Packing for a trip to the South of France involves considering the season, planned activities,",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 2,
+      "section_title": "Travel Pillow and Blanket: A compact travel pillow and blanket can make long flights",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 9,
+      "section_title": "most of your travel experience. Bon voyage!",
+      "importance_rank": 5
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 5,
+      "section_title": "memories of your journey.",
+      "importance_rank": 1
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 2,
+      "section_title": "educational programs dedicated to its preservation.",
+      "importance_rank": 2
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 3,
+      "section_title": "friendly competition make it a beloved pastime.",
+      "importance_rank": 3
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 2,
+      "section_title": "displays attract visitors from all over the world.",
+      "importance_rank": 4
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 4,
+      "section_title": "the harvest with parades, music, and markets. Visitors can also tour lavender farms and",
+      "importance_rank": 5
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "Travel Tips"
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 9,
+      "refined_text": "Airbus Factory Tours: Visit the Airbus factory for a fascinating tour of one of the"
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "areas. Learning a few basic French phrases can enhance your travel experience."
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "buses, and flights. Renting a car is also a great option for exploring the countryside"
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "page_number": 2,
+      "refined_text": "to June) and fall (September to October) when the weather is pleasant, and the tourist"
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 6,
+      "refined_text": "truﬄes from the Périgord region. Join a truﬄe hunting tour to experience the thrill of"
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 3,
+      "refined_text": "tourists alike."
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 6,
+      "refined_text": "tarte tropézienne. These classes are a great way to immerse yourself in the local"
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 8,
+      "refined_text": "linger long after your trip has ended. Bon appétit!"
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "page_number": 4,
+      "refined_text": "you should consider visiting:"
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 1,
+      "refined_text": "points of interest to help you plan an enriching and unforgettable trip."
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 12,
+      "refined_text": "waiting to be discovered. Use this guide to plan your journey through the South of France and"
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 10,
+      "refined_text": "Montpellier, founded in the 10th century, is known for its prestigious university and vibrant"
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 3,
+      "refined_text": "reflects the influence of Russian aristocrats who vacationed in Nice."
+    },
+    {
+      "document": "South of France - History.pdf",
+      "page_number": 1,
+      "refined_text": "A Historical Journey Through the South of France"
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 8,
+      "refined_text": "a good option for travelers on a budget."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 14,
+      "refined_text": "voyage!"
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 1,
+      "refined_text": "trip."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 8,
+      "refined_text": "make it a great choice for budget-conscious travelers."
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "page_number": 9,
+      "refined_text": "vacation."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 13,
+      "refined_text": "this guide to plan your trip and make the most of everything this beautiful region has to oﬀer."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 5,
+      "refined_text": "Périgord : Join a truﬄe hunting tour followed by a cooking class."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 1,
+      "refined_text": "unforgettable trip."
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 1,
+      "refined_text": "a wealth of activities and experiences for travelers. Whether you're seeking adventure,"
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "page_number": 13,
+      "refined_text": "and experiences for travelers. Whether you're exploring the stunning coastline, immersing"
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 1,
+      "refined_text": "Planning a trip to the South of France requires thoughtful preparation to ensure a"
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 8,
+      "refined_text": "Pack a Day Bag: Bring a small day bag for daily excursions."
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 9,
+      "refined_text": "Packing for a trip to the South of France involves considering the season, planned activities,"
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 2,
+      "refined_text": "Travel Pillow and Blanket: A compact travel pillow and blanket can make long flights"
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "page_number": 9,
+      "refined_text": "most of your travel experience. Bon voyage!"
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 5,
+      "refined_text": "memories of your journey."
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 2,
+      "refined_text": "educational programs dedicated to its preservation."
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 3,
+      "refined_text": "friendly competition make it a beloved pastime."
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 2,
+      "refined_text": "displays attract visitors from all over the world."
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "page_number": 4,
+      "refined_text": "the harvest with parades, music, and markets. Visitors can also tour lavender farms and"
+    }
+  ]
+}
